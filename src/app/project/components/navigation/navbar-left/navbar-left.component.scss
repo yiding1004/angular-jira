@@ -1,0 +1,52 @@
+$light-blue: rgb(28, 99, 206);
+
+.navbarLeft-content {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 64px;
+  background-color: #0747A6;
+  align-items: center;
+  justify-content: center;
+  padding-top: 24px;
+  padding-bottom: 20px;
+}
+.logoLink {
+  position: relative;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item {
+  width: 100%;
+  min-height: 42px;
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  font-size: 20px;
+  color: #fff;
+}
+
+.itemIcon {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+}
+
+.itemIcon:hover {
+  background: $light-blue;
+}
+
+.flexAuto {
+  flex: 1 1 auto
+}
