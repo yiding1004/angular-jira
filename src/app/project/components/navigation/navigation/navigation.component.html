@@ -1,7 +1,7 @@
 <div class="navigation">
   <div class="navigationLeft">
     <app-navbar-left></app-navbar-left>
-    <app-sidebar></app-sidebar>
+    <app-sidebar [expended]="expended"></app-sidebar>
   </div>
-  <app-resizer></app-resizer>
+  <app-resizer (click)="toggle()" [expended]="expended"></app-resizer>
 </div>

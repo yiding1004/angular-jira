@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-resizer',
@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./resizer.component.scss']
 })
 export class ResizerComponent {
+  @Input() expended!: boolean;
 
+  get icon() {
+    return this.expended ? 'chevron-left' : 'chevron-right';
+  }
+
+  constructor() {}
 }

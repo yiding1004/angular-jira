@@ -1,6 +1,7 @@
 <div class="project">
-  <app-navigation></app-navigation>
+  <app-navigation [expended]="expended" (manulToggle)="manulToggle()"></app-navigation>
   <div class="content">
     <router-outlet></router-outlet>
   </div>
 </div>
+<svg-definitions></svg-definitions>

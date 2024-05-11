@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./project.component.scss']
 })
 export class ProjectComponent {
+  expended: boolean = true;
 
+  manulToggle() {
+    this.expended = !this.expended;
+  }
 }

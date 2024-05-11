@@ -4,6 +4,7 @@ $light-blue: rgb(28, 99, 206);
   height: 100vh;
   display: flex;
   flex-direction: column;
+  flex-shrink: 0;
   width: 64px;
   background-color: #0747A6;
   align-items: center;
@@ -11,6 +12,7 @@ $light-blue: rgb(28, 99, 206);
   padding-top: 24px;
   padding-bottom: 20px;
 }
+
 .logoLink {
   position: relative;
   padding-top: 8px;

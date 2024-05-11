@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-navigation',
@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./navigation.component.scss']
 })
 export class NavigationComponent {
+  @Input() expended!: boolean;
+  @Output() manulToggle = new EventEmitter();
+
+  constructor() {}
+
+  toggle() {
+    this.manulToggle.emit();
+  }
 
 }
